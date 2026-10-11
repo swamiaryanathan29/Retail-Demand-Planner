@@ -2,9 +2,38 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Plotly](https://img.shields.io/badge/plotly-3F4F75?logo=plotly&logoColor=white)](https://plotly.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > An end-to-end retail supply chain analytics engine built for **Planning & Trading (Operations)** in omni-channel retail. Bridges the gap between predictive demand forecasting and automated procurement replenishment decisions.
+
+---
+
+### 📊 Quick Project Specifications
+
+| Attribute | Specification |
+|:---|:---|
+| **Domain** | Omni-Channel Retail Supply Chain & Merchandise Planning |
+| **Model** | `RandomForestRegressor` with Autoregressive Lags & Calendar Seasonality |
+| **Primary Metric** | **WAPE** (~12.4%) & **RMSE** across 8-week holdout sets |
+| **Decision Logic** | Stochastic Safety Stock & Lead-Time Reorder Point (ROP) Solver |
+| **Interactive UI** | Streamlit + Plotly Interactive Simulation Canvas |
+| **Export Engine** | Enterprise-Ready Operational Excel Schedule (`.xlsx`) |
+
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart LR
+    A["Multi-Channel Sales Data\n(D2C, Marketplace, Retail)"] --> B["Feature Pipeline\n(Seasonality, Lags t-1..t-4, Promos)"]
+    B --> C["ML Forecasting Engine\n(RandomForest Holdout)"]
+    C --> D["Stochastic Inventory Solver\n(Service Level Z & Lead Time)"]
+    D --> E["Streamlit Executive UI\n(Dynamic Simulation Sliders)"]
+    D --> F["Procurement Schedule\n(1-Click Excel .xlsx Export)"]
+```
 
 ---
 
