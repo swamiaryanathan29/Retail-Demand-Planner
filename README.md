@@ -46,6 +46,18 @@ Recommends purchase orders rounded to supplier **Minimum Order Quantity (MOQ)** 
 
 ---
 
+## 🖥️ Live Local Interface
+When running locally, your browser will automatically open with **OmniStock-AI** at:
+👉 `http://localhost:8501`
+
+**Interactive Capabilities in the UI:**
+* 📈 View interactive SKU demand curves and holdout machine learning forecasts.
+* 📦 Calculate 95% service-level safety stock and automated reorder points (ROP).
+* ⚡ Simulate promotional shock scenarios (+15% to +60% demand surge).
+* 📥 One-click export of the replenishment plan into an operational Excel spreadsheet (`.xlsx`).
+
+---
+
 ## 📁 Repository Modules & File Links
 
 * 🖥️ **[`app.py`](./app.py)** — Interactive Streamlit application and executive KPI dashboard.
