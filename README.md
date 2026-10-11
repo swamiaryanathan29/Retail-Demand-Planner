@@ -46,6 +46,16 @@ Recommends purchase orders rounded to supplier **Minimum Order Quantity (MOQ)** 
 
 ---
 
+## 📁 Repository Modules & File Links
+
+* 🖥️ **[`app.py`](./app.py)** — Interactive Streamlit application and executive KPI dashboard.
+* ⚙️ **[`forecast_engine.py`](./forecast_engine.py)** — Machine learning modeling pipeline, WAPE calculator, and stochastic ROP logic.
+* 📊 **[`generate_data.py`](./generate_data.py)** — Time-series retail transaction synthesizer with seasonal Indian market trends.
+* 📈 **[`data/sales_inventory_data.csv`](./data/sales_inventory_data.csv)** — Multi-channel transactional sales and inventory dataset.
+* 📦 **[`requirements.txt`](./requirements.txt)** — Core Python package dependencies.
+
+---
+
 ## 🖥️ Live Local Interface
 When running locally, your browser will automatically open with **OmniStock-AI** at:
 👉 `http://localhost:8501`
@@ -55,13 +65,3 @@ When running locally, your browser will automatically open with **OmniStock-AI**
 * 📦 Calculate 95% service-level safety stock and automated reorder points (ROP).
 * ⚡ Simulate promotional shock scenarios (+15% to +60% demand surge).
 * 📥 One-click export of the replenishment plan into an operational Excel spreadsheet (`.xlsx`).
-
----
-
-## 📁 Repository Modules & File Links
-
-* 🖥️ **[`app.py`](./app.py)** — Interactive Streamlit application and executive KPI dashboard.
-* ⚙️ **[`forecast_engine.py`](./forecast_engine.py)** — Machine learning modeling pipeline, WAPE calculator, and stochastic ROP logic.
-* 📊 **[`generate_data.py`](./generate_data.py)** — Time-series retail transaction synthesizer with seasonal Indian market trends.
-* 📈 **[`data/sales_inventory_data.csv`](./data/sales_inventory_data.csv)** — Multi-channel transactional sales and inventory dataset.
-* 📦 **[`requirements.txt`](./requirements.txt)** — Core Python package dependencies.
