@@ -25,15 +25,20 @@ In omni-channel retail (footwear, apparel, sporting goods), operational planners
 * **Metrics:** Evaluates on **WAPE** (*Weighted Absolute Percentage Error*) and **RMSE**, the gold standard in retail merchandise planning.
 
 ### 2. Stochastic Safety Stock & Replenishment Logic
-* Incorporates supplier lead-time variability and customer **Cycle-Service Level (CSL)**:
-  $$\text{Safety Stock } (SS) = Z \times \sqrt{L} \times \sigma_d$$
-  Where:
-  * $Z$ = Inverse standard normal distribution value (e.g., $1.645$ for 95% service level)
-  * $L$ = Supplier lead time in days
-  * $\sigma_d$ = Standard deviation of daily demand
-* **Reorder Point (ROP):**
-  $$\text{ROP} = (\bar{d} \times L) + SS$$
-* Recommends purchase orders rounded to supplier **Minimum Order Quantity (MOQ)** batches.
+Incorporates supplier lead-time variability and customer **Cycle-Service Level (CSL)**:
+
+```text
+Safety Stock (SS) = Z × sqrt(L) × σ_d
+Reorder Point (ROP) = (d_avg × L) + SS
+```
+
+Where:
+* **Z** = Inverse standard normal distribution value (e.g., `1.645` for 95% service level)
+* **L** = Supplier lead time in days
+* **σ_d** = Standard deviation of daily demand
+* **d_avg** = Average daily sales demand
+
+Recommends purchase orders rounded to supplier **Minimum Order Quantity (MOQ)** batches.
 
 ### 3. Scenario Sandbox & Excel Reporting
 * **Promotional Shock Simulator:** Allows planners to test the effect of a +15% to +60% demand surge on stockout risk.
