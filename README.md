@@ -41,11 +41,10 @@ In omni-channel retail (footwear, apparel, sporting goods), operational planners
 
 ---
 
-## 📁 Repository Structure
-```text
-├── app.py                      # Interactive Streamlit application
-├── forecast_engine.py          # ML modeling pipeline, WAPE calculator & ROP mathematics
-├── generate_data.py            # Retail sales & inventory time-series synthesizer
-├── requirements.txt            # Python dependencies
-└── README.md                   # Documentation and business context
-```
+## 📁 Repository Modules & File Links
+
+* 🖥️ **[`app.py`](./app.py)** — Interactive Streamlit application and executive KPI dashboard.
+* ⚙️ **[`forecast_engine.py`](./forecast_engine.py)** — Machine learning modeling pipeline, WAPE calculator, and stochastic ROP logic.
+* 📊 **[`generate_data.py`](./generate_data.py)** — Time-series retail transaction synthesizer with seasonal Indian market trends.
+* 📈 **[`data/sales_inventory_data.csv`](./data/sales_inventory_data.csv)** — Multi-channel transactional sales and inventory dataset.
+* 📦 **[`requirements.txt`](./requirements.txt)** — Core Python package dependencies.
