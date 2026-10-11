@@ -49,35 +49,3 @@ In omni-channel retail (footwear, apparel, sporting goods), operational planners
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Documentation and business context
 ```
-
----
-
-## 🚀 Quickstart Guide
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/<YOUR_GITHUB_USERNAME>/retail-demand-replenishment-engine.git
-cd retail-demand-replenishment-engine
-```
-
-### 2. Set up virtual environment & install dependencies
-```bash
-python3 -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 3. Run the application
-```bash
-streamlit run app.py
-```
-Open your browser at `http://localhost:8501`.
-
----
-
-## 💼 Resume Description (For Planning & Operations Roles)
-
-**OmniStock-AI: SKU Demand Forecasting & Inventory Engine** | *Python, Scikit-Learn, Streamlit, Pandas*
-* Built an operational merchandise planning dashboard to predict weekly SKU sales across 4 distribution channels (D2C Direct, Marketplaces, Retail Outlets).
-* Designed feature pipelines capturing retail seasonality and promotional lifts, achieving a ~12% WAPE on holdout test sets.
-* Formulated stochastic Safety Stock and Reorder Point (ROP) algorithms across 10 SKUs, preventing stockout risks and generating one-click procurement schedules in Excel.
